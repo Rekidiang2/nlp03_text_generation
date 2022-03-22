@@ -1,5 +1,6 @@
-# Ssentiment Analysis
-Extract sand-up comedy transcript, calculate polarity and sensitivity the text to determine its sentiment (positive or negative or neutral)
+# Text Generation
+
+Text generation is the task of generating text with the goal of appearing indistinguishable to human-written text. This task if more formally known as "natural language generation" in the literature.Text generation is the task of generating text with the goal of appearing indistinguishable to human-written text. This task if more formally known as "natural language generation" in the literature. [From](https://paperswithcode.com/task/text-generation)
 
 <img src="./images/cover.png" width="1000" alt="photo cover" />
 
@@ -22,7 +23,7 @@ Extract sand-up comedy transcript, calculate polarity and sensitivity the text t
 #### analysis
 * ├── 1_data_preprocessing.ipynb
 * ├── 2_exploratory_data_analysis.ipynb
-* ├── 3_sentiment_analysis.ipynb
+* ├── 3_text_generation.ipynb
 
 #### figures
 * ├── contains graph and figures
@@ -59,21 +60,21 @@ Extract sand-up comedy transcript, calculate polarity and sensitivity the text t
 #### 3.2.1. WITH PIP and VENV
 
 ##### (Windows) 
-+ $ python -m venv nlp01_venv 
-+ $ nlp01_venv\Scripts\activate (<= Activate virtual Environment)
++ $ python -m venv nlp03_venv 
++ $ nlp03_venv\Scripts\activate (<= Activate virtual Environment)
 + $ deactivate (<= Deactivate virtual Environment)
 + $ pip install -r requirements.txt
 + Set  VIRTUAL ENVIRONMENT as KERNEL : 
-  +  $ python -m ipykernel install --user --name nlp01_venv --display-name "p01ml_kernel"
+  +  $ python -m ipykernel install --user --name nlp03_venv --display-name "nlp03_kernel"
 + $ jupyter notebook
 
 ##### (MasOS || LINUX)
 + $ python3 -m venv nlp01_venv 
-+ $ source p01ml_venv/bin/activate (<= Activate virtual Environment)  
++ $ source nlp03_venv/bin/activate (<= Activate virtual Environment)  
 + $ deactivate (<= Deactivate virtual Environment)
 + $ pip install -r requirements.txt
 + Set  VIRTUAL ENVIRONMENT as KERNEL : 
-  +  $ python -m ipykernel install --user --name nlp01_venv --display-name "nlp01_kernel"
+  +  $ python -m ipykernel install --user --name nlp03_venv --display-name "nlp03_kernel"
 + $ jupyter notebook
 
 
@@ -81,11 +82,11 @@ Extract sand-up comedy transcript, calculate polarity and sensitivity the text t
 
 + Verify if you have conda installed ($conda --version) if not go to [anconda](https://www.anaconda.com/products/individual) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) to download and install it
 
-+ $ conda create -n nlp01_venv python=3.7
-+ $ conda activate nlp01_venv (<= Activate virtual Environment)
++ $ conda create -n nlp03_venv python=3.7
++ $ conda activate nlp03_venv (<= Activate virtual Environment)
 + $ conda deactivate  (<= Deactivate virtual Environment)
 + Set  VIRTUAL ENVIRONMENT as KERNEL : 
-  +  $ python -m ipykernel install --user --name nlp01_venv --display-name "nlp01_kernel"
+  +  $ python -m ipykernel install --user --name nlp03_venv --display-name "nlp03_kernel"
 + $ jupyter notebook
 + Go to Kernel -> Change kernel -> nlp01_kernel
 + $ jupyter kernelspec list (<= list all ipykernel in your system)
@@ -94,7 +95,7 @@ Extract sand-up comedy transcript, calculate polarity and sensitivity the text t
 
 #### Manage kernel
 + $ jupyter kernelspec list (<= list all ipykernel in your system)
-+ $ jupyter kernelspec uninstall nlp01_venv (<= Delete the ipykernel in your system)
++ $ jupyter kernelspec uninstall nlp03_venv (<= Delete the ipykernel in your system)
 
 ## 4. Deployment (Real world Use)
 
